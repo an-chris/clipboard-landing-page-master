@@ -1,0 +1,35 @@
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+
+
+// Font
+$font: "Bai Jamjuree", san-serif;
+
+// Colors
+$cyan: hsl(171, 66%, 44%);
+$blue: hsl(233, 100%, 69%);
+$dark-gray:  hsl(210, 10%, 33%);
+$gray: hsl(201, 11%, 66%);
+
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 1rem = 10px;
+}
+
+// Footer
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
