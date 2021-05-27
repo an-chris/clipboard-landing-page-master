@@ -10,6 +10,49 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+body {
+  font-family: "Bai Jamjuree", san-serif;
+  text-align: center; }
+
+.btn:link,
+.btn:visited {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.75rem 4rem;
+  border-radius: 2000px; }
+
+.btn-cyan {
+  background-color: #26baa4;
+  margin-right: 2rem; }
+
+.btn-blue {
+  background-color: #6173ff; }
+
+.heading {
+  color: #4c545d;
+  font-size: 3rem; }
+
+.summary {
+  color: #9fabb2;
+  font-size: 1.5rem; }
+
+.landing-page {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10rem;
+  padding-left: 20%;
+  padding-right: 20%; }
+  .landing-page__logo {
+    margin-top: 20%;
+    margin-bottom: 8rem; }
+  .landing-page__heading {
+    margin-bottom: 3rem;
+    font-size: 4rem; }
+  .landing-page__summary {
+    margin-bottom: 6rem; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }

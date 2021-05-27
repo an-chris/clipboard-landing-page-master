@@ -10,7 +10,7 @@ $blue: hsl(233, 100%, 69%);
 $dark-gray:  hsl(210, 10%, 33%);
 $gray: hsl(201, 11%, 66%);
 
-
+// Default styling
 *,
 *::after,
 *::before {
@@ -23,6 +23,69 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px;
 }
+
+body {
+	font-family: $font;
+	text-align: center;
+}
+
+// Button styling
+.btn:link,
+.btn:visited {
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: #fff;
+	padding: 1.75rem 4rem;
+	border-radius: 2000px;
+}
+
+.btn-cyan {
+	background-color: $cyan;
+	margin-right: 2rem;
+}
+
+.btn-blue {
+	background-color: $blue;
+}
+
+// Text styling
+.heading {
+	color: $dark-gray;
+	font-size: 3rem;
+}
+
+.summary {
+	color: $gray;
+	font-size: 1.5rem;
+}
+
+// Landing page
+.landing-page {
+	background-image: url("../images/bg-header-desktop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 10rem;
+	padding-left: 20%;
+	padding-right: 20%;
+
+	&__logo {
+		margin-top: 20%;
+		margin-bottom: 8rem;
+	}
+
+	&__heading {
+		margin-bottom: 3rem;
+		font-size: 4rem;
+	}
+	&__summary {
+		margin-bottom: 6rem;
+	}
+
+	&__btn {
+
+	}
+}
+
 
 // Footer
 .attribution {
