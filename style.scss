@@ -52,11 +52,14 @@ body {
 .heading {
 	color: $dark-gray;
 	font-size: 3rem;
+	margin-bottom: 4rem;
 }
 
 .summary {
 	color: $gray;
 	font-size: 1.5rem;
+	margin-bottom: 3rem;
+	line-height: 1.75;
 }
 
 // Landing page
@@ -64,9 +67,8 @@ body {
 	background-image: url("../images/bg-header-desktop.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-bottom: 10rem;
-	padding-left: 20%;
-	padding-right: 20%;
+	margin-bottom: 14rem;
+	padding: 0 20%;
 
 	&__logo {
 		margin-top: 20%;
@@ -80,9 +82,18 @@ body {
 	&__summary {
 		margin-bottom: 6rem;
 	}
+}
 
-	&__btn {
+// Snippets
+.snippets {
 
+
+	&__heading {
+
+	}
+
+	&__summary {
+		padding: 0 20%;
 	}
 }
 
