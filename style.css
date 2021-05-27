@@ -33,6 +33,9 @@ body {
   color: #4c545d;
   font-size: 3rem;
   margin-bottom: 4rem; }
+  .heading-2 {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
 
 .summary {
   color: #9fabb2;
@@ -47,7 +50,7 @@ body {
   margin-bottom: 14rem;
   padding: 0 20%; }
   .landing-page__logo {
-    margin-top: 20%;
+    margin-top: 15%;
     margin-bottom: 8rem; }
   .landing-page__heading {
     margin-bottom: 3rem;
@@ -55,8 +58,23 @@ body {
   .landing-page__summary {
     margin-bottom: 6rem; }
 
-.snippets__summary {
+.snippets {
   padding: 0 20%; }
+  .snippets__summary {
+    margin-bottom: 12rem; }
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 15%; }
+  .features__img {
+    transform: translateX(-2.5rem); }
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5%; }
 
 .attribution {
   font-size: 11px;
