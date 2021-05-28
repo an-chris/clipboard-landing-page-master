@@ -110,10 +110,39 @@ body {
   .companies__logo {
     height: 70%; }
 
-.last__summary {
-  margin-bottom: 8rem; }
+.last {
+  margin-bottom: 20rem; }
+  .last__summary {
+    margin-bottom: 8rem; }
+
+.footer {
+  background-color: #f0f0f3; }
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .footer__logo {
+    margin-top: 3rem;
+    height: 6rem; }
+  .footer__sections {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(3rem, 1fr));
+    column-gap: 5rem;
+    row-gap: 2rem;
+    font-size: 1.3rem;
+    margin-top: 1.75rem; }
+  .footer__section {
+    color: #4c545d; }
+    .footer__section:hover {
+      cursor: pointer; }
+  .footer__icons {
+    margin-top: 2rem; }
+  .footer__icon:not(:last-child), .footer__icon:link:not(:last-child), .footer__icon:visited:not(:last-child) {
+    text-decoration: none;
+    margin-right: 2rem; }
 
 .attribution {
+  margin-top: 3rem;
   font-size: 11px;
   text-align: center; }
 
