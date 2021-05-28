@@ -132,12 +132,12 @@ body {
 
 // Workflow
 .workflow {
-	
+
 	&__features {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 0 8%;
+		padding: 0 7%;
 
 	}
 
@@ -158,6 +158,15 @@ body {
 
 .feature__summary {
 	font-size: 1.2rem;
+}
+
+// Companies
+.companies {
+	margin-top: 12rem;
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 5%;
 }
 
 // Footer

@@ -85,7 +85,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 8%; }
+  padding: 0 7%; }
 .workflow__feature {
   width: 25%; }
 .workflow__img {
@@ -98,6 +98,13 @@ body {
 
 .feature__summary {
   font-size: 1.2rem; }
+
+.companies {
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5%; }
 
 .attribution {
   font-size: 11px;
