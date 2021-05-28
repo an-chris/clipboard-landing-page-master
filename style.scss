@@ -167,7 +167,12 @@ body {
 	margin-bottom: 10rem;
 	display: flex;
 	justify-content: space-around;
-	padding: 0 5%;
+	align-items: center;
+	padding: 0 8%;
+
+	&__logo {
+		height: 70%;
+	}
 }
 
 // Last

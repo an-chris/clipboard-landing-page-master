@@ -105,7 +105,10 @@ body {
   margin-bottom: 10rem;
   display: flex;
   justify-content: space-around;
-  padding: 0 5%; }
+  align-items: center;
+  padding: 0 8%; }
+  .companies__logo {
+    height: 70%; }
 
 .last__summary {
   margin-bottom: 8rem; }
