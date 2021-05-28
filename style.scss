@@ -120,14 +120,44 @@ body {
 
 // Clipboard
 .clipboard {
-
 	&__heading {
 		margin-top: 12rem;
+
 	}
 
 	&__summary {
 		margin-bottom: 10rem;
 	}
+}
+
+// Workflow
+.workflow {
+	
+	&__features {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 8%;
+
+	}
+
+	&__feature {
+		width: 25%;
+	}
+
+	&__img {
+		height: 4rem;
+		margin-top: 4.5rem;
+		margin-bottom: 3rem;
+	}
+}
+
+.feature__heading {
+	font-size: 1.5rem;
+}
+
+.feature__summary {
+	font-size: 1.2rem;
 }
 
 // Footer

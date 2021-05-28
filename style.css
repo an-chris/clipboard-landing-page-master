@@ -81,6 +81,24 @@ body {
 .clipboard__summary {
   margin-bottom: 10rem; }
 
+.workflow__features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8%; }
+.workflow__feature {
+  width: 25%; }
+.workflow__img {
+  height: 4rem;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem; }
+
+.feature__heading {
+  font-size: 1.5rem; }
+
+.feature__summary {
+  font-size: 1.2rem; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }
