@@ -118,6 +118,17 @@ body {
 	}
 }
 
+// Clipboard
+.clipboard {
+
+	&__heading {
+		margin-top: 12rem;
+	}
+
+	&__summary {
+		margin-bottom: 10rem;
+	}
+}
 
 // Footer
 .attribution {
