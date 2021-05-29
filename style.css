@@ -1,169 +1,69 @@
-@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+/*
+Error: Undefined variable: "$bp-lg".
+        on line 32 of /Users/chrisan/Desktop/FrontendMentor Challenges/clipboard-landing-page-master/style.scss
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) and (min-width: 87.5em) {
-    html {
-      font-size: 90%; } }
-  @media only screen and (max-width: 62.5em) {
-    html {
-      font-size: 50%; } }
+27: 
+28: html {
+29: 	box-sizing: border-box;
+30: 	font-size: 62.5%; // 1rem = 10px;
+31: 
+32: 	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
+33: 		font-size: 90%;
+34: 	}
+35: 
+36: 	@media only screen and (max-width: $bp-md) {
+37: 		font-size: 50%;
 
-body {
-  font-family: "Bai Jamjuree", san-serif;
-  text-align: center; }
-
-.btn,
-.btn:link,
-.btn:visited {
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: #fff;
-  padding: 1.75rem 4rem;
-  border-radius: 2000px; }
-
-.btn-cyan {
-  background-color: #26baa4;
-  margin-right: 2rem; }
-
-.btn-blue {
-  background-color: #6173ff; }
-
-.heading {
-  color: #4c545d;
-  font-size: 3rem;
-  margin-bottom: 4rem; }
-  .heading-2 {
-    font-size: 2rem;
-    margin-bottom: 2rem; }
-
-.summary {
-  color: #9fabb2;
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  line-height: 1.75; }
-
-.landing-page {
-  background-image: url("../images/bg-header-desktop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 14rem;
-  padding: 15%; }
-  .landing-page__logo {
-    margin-top: 15%;
-    margin-bottom: 8rem; }
-  .landing-page__heading {
-    margin-bottom: 3rem;
-    font-size: 4rem; }
-  .landing-page__summary {
-    margin-bottom: 8rem; }
-
-.snippets {
-  padding: 0 20%; }
-  .snippets__summary {
-    margin-bottom: 12rem; }
-
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding-right: 5%; }
-  .features__img {
-    transform: translateX(-2.5rem);
-    width: 60vw; }
-  .features__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding-left: 5%; }
-    @media only screen and (max-width: 75em) and (min-width: 87.5em) {
-      .features__list {
-        padding: 0; } }
-
-.clipboard {
-  margin-bottom: 10rem; }
-  .clipboard__heading {
-    margin-top: 12rem; }
-  .clipboard__summary {
-    margin-bottom: 10rem; }
-  .clipboard__img {
-    width: 65vw; }
-
-.workflow__features {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 7%; }
-.workflow__feature {
-  width: 25%; }
-.workflow__img {
-  height: 4rem;
-  margin-top: 4.5rem;
-  margin-bottom: 3rem; }
-
-.feature__heading {
-  font-size: 1.5rem; }
-
-.feature__summary {
-  font-size: 1.2rem; }
-
-.companies {
-  margin-top: 12rem;
-  margin-bottom: 10rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 8%; }
-  .companies__logo {
-    height: 4rem; }
-    @media only screen and (max-width: 62.5em) {
-      .companies__logo {
-        height: 3.5rem; } }
-
-.last {
-  margin-bottom: 20rem; }
-  .last__summary {
-    margin-bottom: 8rem; }
-
-.footer {
-  background-color: #f0f0f3; }
-  .footer__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  .footer__logo {
-    margin-top: 3rem;
-    height: 6rem; }
-  .footer__sections {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(3rem, 1fr));
-    column-gap: 5rem;
-    row-gap: 2rem;
-    font-size: 1.3rem;
-    margin-top: 1.75rem; }
-  .footer__section {
-    color: #4c545d; }
-    .footer__section:hover {
-      cursor: pointer; }
-  .footer__icons {
-    margin-top: 2rem; }
-  .footer__icon:not(:last-child), .footer__icon:link:not(:last-child), .footer__icon:visited:not(:last-child) {
-    text-decoration: none;
-    margin-right: 2rem; }
-
-.attribution {
-  margin-top: 3rem;
-  font-size: 11px;
-  text-align: center; }
-
-.attribution a {
-  color: #3e52a3; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/chrisan/Desktop/FrontendMentor Challenges/clipboard-landing-page-master/style.scss:32
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:551:in `block in run_interp_no_strip'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `run_interp_no_strip'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:556:in `run_interp'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:521:in `visit_media'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$bp-lg\".\A         on line 32 of /Users/chrisan/Desktop/FrontendMentor Challenges/clipboard-landing-page-master/style.scss\A \A 27: \A 28: html {\A 29: 	box-sizing: border-box;\A 30: 	font-size: 62.5%; // 1rem = 10px;\A 31: \A 32: 	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {\A 33: 		font-size: 90%;\A 34: 	}\A 35: \A 36: 	@media only screen and (max-width: $bp-md) {\A 37: 		font-size: 50%;"; }
