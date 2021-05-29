@@ -11,7 +11,8 @@ $dark-gray:  hsl(210, 10%, 33%);
 $gray: hsl(201, 11%, 66%);
 
 // Breakpoints
-$bp-lg: 87.5em; // 1400px
+$bp-xl: 87.5em; // 1400px
+$bp-lg: 75em; // 1200px
 $bp-md: 62.5em; // 1000px
 $bp-sm: 46.8em; // 750px
 // $bp-xs:
@@ -29,8 +30,8 @@ html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px;
 
-	@media only screen and (min-width: $bp-lg) {
-		font-size: 80%;
+	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
+		font-size: 90%;
 	}
 
 }
@@ -117,9 +118,10 @@ body {
 	justify-content: space-around;
 	padding-right: 15%;
 
-	@media only screen and (min-width: $bp-lg) {
+	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
 		padding-right: 8%;
 	}
+
 
 	&__img {
 		transform: translateX(-2.5rem);
@@ -133,7 +135,7 @@ body {
 		text-align: left;
 		padding-left: 5%;
 
-		@media only screen and (min-width: $bp-lg) {
+		@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
 			padding: 0;
 		}
 
@@ -155,8 +157,12 @@ body {
 	&__img {
 		width: 50vw;
 
-		@media only screen and (min-width: $bp-lg) {
+		@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
 			width: 65vw;
+		}
+
+		@media only screen and (max-width: $bp-lg) {
+			width: 60vw;
 		}
 	}
 }
