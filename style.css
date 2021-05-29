@@ -9,6 +9,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (min-width: 87.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   font-family: "Bai Jamjuree", san-serif;
@@ -68,6 +71,9 @@ body {
   display: flex;
   justify-content: space-around;
   padding-right: 15%; }
+  @media only screen and (min-width: 87.5em) {
+    .features {
+      padding-right: 8%; } }
   .features__img {
     transform: translateX(-2.5rem);
     width: 60vw; }
@@ -77,6 +83,9 @@ body {
     justify-content: center;
     text-align: left;
     padding-left: 5%; }
+    @media only screen and (min-width: 87.5em) {
+      .features__list {
+        padding: 0; } }
 
 .clipboard {
   margin-bottom: 10rem; }
@@ -86,6 +95,9 @@ body {
     margin-bottom: 10rem; }
   .clipboard__img {
     width: 50vw; }
+    @media only screen and (min-width: 87.5em) {
+      .clipboard__img {
+        width: 65vw; } }
 
 .workflow__features {
   display: flex;

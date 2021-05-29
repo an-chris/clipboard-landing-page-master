@@ -10,6 +10,12 @@ $blue: hsl(233, 100%, 69%);
 $dark-gray:  hsl(210, 10%, 33%);
 $gray: hsl(201, 11%, 66%);
 
+// Breakpoints
+$bp-lg: 87.5em; // 1400px
+$bp-md: 62.5em; // 1000px
+$bp-sm: 46.8em; // 750px
+// $bp-xs:
+
 // Default styling
 *,
 *::after,
@@ -22,6 +28,11 @@ $gray: hsl(201, 11%, 66%);
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px;
+
+	@media only screen and (min-width: $bp-lg) {
+		font-size: 80%;
+	}
+
 }
 
 body {
@@ -106,6 +117,10 @@ body {
 	justify-content: space-around;
 	padding-right: 15%;
 
+	@media only screen and (min-width: $bp-lg) {
+		padding-right: 8%;
+	}
+
 	&__img {
 		transform: translateX(-2.5rem);
 		width: 60vw;
@@ -117,6 +132,11 @@ body {
 		justify-content: center;
 		text-align: left;
 		padding-left: 5%;
+
+		@media only screen and (min-width: $bp-lg) {
+			padding: 0;
+		}
+
 	}
 }
 
@@ -134,6 +154,10 @@ body {
 
 	&__img {
 		width: 50vw;
+
+		@media only screen and (min-width: $bp-lg) {
+			width: 65vw;
+		}
 	}
 }
 
