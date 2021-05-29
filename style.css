@@ -69,7 +69,8 @@ body {
   justify-content: space-around;
   padding-right: 15%; }
   .features__img {
-    transform: translateX(-2.5rem); }
+    transform: translateX(-2.5rem);
+    width: 60vw; }
   .features__list {
     display: flex;
     flex-direction: column;
@@ -77,10 +78,14 @@ body {
     text-align: left;
     padding-left: 5%; }
 
-.clipboard__heading {
-  margin-top: 12rem; }
-.clipboard__summary {
+.clipboard {
   margin-bottom: 10rem; }
+  .clipboard__heading {
+    margin-top: 12rem; }
+  .clipboard__summary {
+    margin-bottom: 10rem; }
+  .clipboard__img {
+    width: 50vw; }
 
 .workflow__features {
   display: flex;
