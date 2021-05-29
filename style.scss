@@ -15,7 +15,7 @@ $bp-xl: 87.5em; // 1400px
 $bp-lg: 75em; // 1200px
 $bp-md: 62.5em; // 1000px
 $bp-sm: 46.8em; // 750px
-// $bp-xs:
+// $bp-xs: 31.25em; // 500px
 
 // Default styling
 *,
@@ -147,6 +147,10 @@ body {
 // Clipboard
 .clipboard {
 	margin-bottom: 10rem;
+
+	@media only screen and (max-width: $bp-sm) {
+		padding: 0 10%;
+	}
 
 	&__heading {
 		margin-top: 12rem;

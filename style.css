@@ -92,6 +92,9 @@ body {
 
 .clipboard {
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 46.8em) {
+    .clipboard {
+      padding: 0 10%; } }
   .clipboard__heading {
     margin-top: 12rem; }
   .clipboard__summary {
