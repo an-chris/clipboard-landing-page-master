@@ -9,6 +9,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Bai Jamjuree", san-serif;
@@ -70,6 +73,9 @@ body {
   padding-right: 15%; }
   .features__img {
     transform: translateX(-2.5rem); }
+    @media only screen and (max-width: 62.5em) {
+      .features__img {
+        width: 62.5%; } }
   .features__list {
     display: flex;
     flex-direction: column;
@@ -126,7 +132,7 @@ body {
     height: 6rem; }
   .footer__sections {
     display: grid;
-    grid-template-columns: repeat(3, minmax(3rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
     row-gap: 2rem;
     font-size: 1.3rem;
