@@ -82,7 +82,7 @@ body {
   padding-right: 5%; }
   .features__img {
     transform: translateX(-2.5rem);
-    width: 60vw; }
+    width: 50vw; }
   .features__list {
     display: flex;
     flex-direction: column;
