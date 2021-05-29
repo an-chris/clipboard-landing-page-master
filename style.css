@@ -80,9 +80,22 @@ body {
   display: flex;
   justify-content: space-around;
   padding-right: 5%; }
+  @media only screen and (max-width: 46.8em) {
+    .features {
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0; } }
   .features__img {
     transform: translateX(-2.5rem);
     width: 50vw; }
+    @media only screen and (max-width: 46.8em) {
+      .features__img {
+        transform: translateX(0);
+        align-self: center;
+        margin-bottom: 7rem; } }
+    @media only screen and (max-width: 46.8em) {
+      .features__img {
+        width: 70vw; } }
   .features__list {
     display: flex;
     flex-direction: column;
@@ -92,30 +105,47 @@ body {
     @media only screen and (max-width: 75em) and (min-width: 87.5em) {
       .features__list {
         padding: 0; } }
+    @media only screen and (max-width: 46.8em) {
+      .features__list {
+        text-align: center;
+        padding: 10%; } }
 
 .clipboard {
-  margin-bottom: 10rem; }
-  @media only screen and (max-width: 46.8em) {
-    .clipboard {
-      padding: 0 10%; } }
+  margin-bottom: 10rem;
+  padding: 0 10%; }
   .clipboard__heading {
     margin-top: 12rem; }
   .clipboard__summary {
     margin-bottom: 10rem; }
   .clipboard__img {
     width: 65vw; }
+    @media only screen and (max-width: 46.8em) {
+      .clipboard__img {
+        width: 80vw; } }
 
-.workflow__features {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 7%; }
-.workflow__feature {
-  width: 25%; }
-.workflow__img {
-  height: 4rem;
-  margin-top: 4.5rem;
-  margin-bottom: 3rem; }
+.workflow {
+  padding: 0 10%; }
+  .workflow__features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    @media only screen and (max-width: 46.8em) {
+      .workflow__features {
+        flex-direction: column; } }
+  .workflow__feature {
+    width: 25%; }
+    @media only screen and (max-width: 46.8em) {
+      .workflow__feature {
+        width: auto; } }
+  .workflow__img {
+    height: 4rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 46.8em) {
+      .workflow__img {
+        height: 3.5rem;
+        margin-top: 4rem;
+        margin-bottom: 2.5rem; } }
 
 .feature__heading {
   font-size: 1.5rem; }
@@ -124,23 +154,26 @@ body {
   font-size: 1.2rem; }
 
 .companies {
-  margin-top: 12rem;
-  margin-bottom: 10rem;
+  margin: 10rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 0 8%; }
+  @media only screen and (max-width: 46.8em) {
+    .companies {
+      flex-direction: column;
+      margin: 5rem 0;
+      padding: 0;
+      height: 40rem; } }
   .companies__logo {
     height: 4rem; }
     @media only screen and (max-width: 62.5em) {
       .companies__logo {
         height: 3.5rem; } }
-    @media only screen and (max-width: 46.8em) {
-      .companies__logo {
-        height: 3rem; } }
 
 .last {
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  padding: 0 10%; }
   .last__summary {
     margin-bottom: 8rem; }
 
@@ -153,6 +186,10 @@ body {
   .footer__logo {
     margin-top: 3rem;
     height: 6rem; }
+    @media only screen and (max-width: 46.8em) {
+      .footer__logo {
+        height: 4rem;
+        margin-top: 2rem; } }
   .footer__sections {
     display: grid;
     grid-template-columns: repeat(3, minmax(3rem, 1fr));
@@ -160,20 +197,29 @@ body {
     row-gap: 2rem;
     font-size: 1.3rem;
     margin-top: 1.75rem; }
+    @media only screen and (max-width: 46.8em) {
+      .footer__sections {
+        font-size: .8rem; } }
   .footer__section {
     color: #4c545d; }
     .footer__section:hover {
       cursor: pointer; }
   .footer__icons {
     margin-top: 2rem; }
+    @media only screen and (max-width: 46.8em) {
+      .footer__icons img {
+        height: 2rem; } }
   .footer__icon:not(:last-child), .footer__icon:link:not(:last-child), .footer__icon:visited:not(:last-child) {
     text-decoration: none;
     margin-right: 2rem; }
 
 .attribution {
   margin-top: 3rem;
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center; }
+  @media only screen and (max-width: 46.8em) {
+    .attribution {
+      font-size: .5rem; } }
 
 .attribution a {
   color: #3e52a3; }
