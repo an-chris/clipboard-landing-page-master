@@ -10,9 +10,6 @@ $blue: hsl(233, 100%, 69%);
 $dark-gray:  hsl(210, 10%, 33%);
 $gray: hsl(201, 11%, 66%);
 
-// Breakpoints
-$bp-md: 62.5em; //1000px
-
 // Default styling
 *,
 *::after,
@@ -25,10 +22,6 @@ $bp-md: 62.5em; //1000px
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px;
-
-	@media only screen and (max-width: $bp-md) {
-		font-size: 50%;
-	}
 }
 
 body {
@@ -115,10 +108,6 @@ body {
 
 	&__img {
 		transform: translateX(-2.5rem);
-
-		@media only screen and (max-width: $bp-md) {
-			width: 62.5%;
-		}
 	}
 
 	&__list {
@@ -132,11 +121,6 @@ body {
 
 // Clipboard
 .clipboard {
-
-	&__img {
-
-	}
-
 	&__heading {
 		margin-top: 12rem;
 
@@ -219,7 +203,7 @@ body {
 
 	&__sections {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, minmax(3rem, 1fr));
 		column-gap: 5rem;
 		row-gap: 2rem;
 		font-size: 1.3rem;
