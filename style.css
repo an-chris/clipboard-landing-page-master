@@ -12,6 +12,9 @@ html {
   @media only screen and (max-width: 75em) and (min-width: 87.5em) {
     html {
       font-size: 90%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Bai Jamjuree", san-serif;
@@ -70,10 +73,7 @@ body {
 .features {
   display: flex;
   justify-content: space-around;
-  padding-right: 15%; }
-  @media only screen and (max-width: 75em) and (min-width: 87.5em) {
-    .features {
-      padding-right: 8%; } }
+  padding-right: 5%; }
   .features__img {
     transform: translateX(-2.5rem);
     width: 60vw; }
@@ -94,13 +94,7 @@ body {
   .clipboard__summary {
     margin-bottom: 10rem; }
   .clipboard__img {
-    width: 50vw; }
-    @media only screen and (max-width: 75em) and (min-width: 87.5em) {
-      .clipboard__img {
-        width: 65vw; } }
-    @media only screen and (max-width: 75em) {
-      .clipboard__img {
-        width: 60vw; } }
+    width: 65vw; }
 
 .workflow__features {
   display: flex;
@@ -128,7 +122,10 @@ body {
   align-items: center;
   padding: 0 8%; }
   .companies__logo {
-    height: 70%; }
+    height: 4rem; }
+    @media only screen and (max-width: 62.5em) {
+      .companies__logo {
+        height: 3.5rem; } }
 
 .last {
   margin-bottom: 20rem; }

@@ -34,6 +34,10 @@ html {
 		font-size: 90%;
 	}
 
+	@media only screen and (max-width: $bp-md) {
+		font-size: 50%;
+	}
+
 }
 
 body {
@@ -116,12 +120,7 @@ body {
 .features {
 	display: flex;
 	justify-content: space-around;
-	padding-right: 15%;
-
-	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
-		padding-right: 8%;
-	}
-
+	padding-right: 5%;
 
 	&__img {
 		transform: translateX(-2.5rem);
@@ -155,15 +154,8 @@ body {
 	}
 
 	&__img {
-		width: 50vw;
+		width: 65vw;
 
-		@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
-			width: 65vw;
-		}
-
-		@media only screen and (max-width: $bp-lg) {
-			width: 60vw;
-		}
 	}
 }
 
@@ -207,7 +199,11 @@ body {
 	padding: 0 8%;
 
 	&__logo {
-		height: 70%;
+		height: 4rem;
+
+		@media only screen and (max-width: $bp-md) {
+			height: 3.5rem;
+		}
 	}
 }
 
