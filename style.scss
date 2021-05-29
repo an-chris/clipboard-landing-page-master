@@ -31,15 +31,19 @@ html {
 	font-size: 62.5%; // 1rem = 10px;
 
 	@media only screen and (max-width: $bp-lg) and (min-width: $bp-xl) {
-		font-size: 90%;
+		font-size: 100%;
 	}
 
 	@media only screen and (max-width: $bp-md) {
-		font-size: 50%;
+		font-size: 60%;
 	}
 
 	@media only screen and (max-width: $bp-sm) {
-		font-size: 40%;
+		font-size: 55%;
+	}
+
+	@media only screen and (max-width: $bp-xs) {
+		font-size: 55%;
 	}
 }
 
@@ -210,6 +214,10 @@ body {
 
 		@media only screen and (max-width: $bp-md) {
 			height: 3.5rem;
+		}
+
+		@media only screen and (max-width: $bp-sm) {
+			height: 3rem;
 		}
 	}
 }
